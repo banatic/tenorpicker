@@ -4,8 +4,12 @@ CoolMessenger 사용자를 위한 Tenor 기반의 GIF 검색 및 선택기능을
 
 ## 기능 (Features)
 
+![img](https://github.com/user-attachments/assets/65fdd69e-1eb6-402d-b260-ad67b966bbfb)
+
+- **쿨 메신저 메시지 전송창 전용:**
+메시지 전송창에 붙어다니는 구조입니다.
 - **Tenor GIF 검색 및 트렌딩 확인:** 간편하게 최신 유행하는 GIF와 특정 키워드의 GIF를 검색할 수 있습니다.
-- **클릭하여 복사 (Click to Copy):** 원하는 GIF를 클릭하면 바로 클립보드에 HTML 형태로 복사되어 CoolMessenger 등의 지원하는 메신저에 바로 붙여넣을 수 있습니다.
+- **클릭하여 복사:** 원하는 GIF를 클릭하면 바로 클립보드에 HTML 형태로 복사되어 CoolMessenger 등의 지원하는 메신저에 바로 붙여넣을 수 있습니다.
 - **자동 창 인식:** 대상 애플리케이션 창(CoolMessenger)을 감지하여 해당 창 근처에 자동으로 위치합니다.
 - **가벼운 리소스 사용:** Tauri 2.0 프레임워크와 Rust를 기반으로 구축되어 작고 빠릅니다.
 
@@ -30,4 +34,3 @@ npm run tauri build
 
 - **Frontend:** Vanilla HTML, CSS, JavaScript (Glassmorphism 디자인 적용)
 - **Backend:** Rust, Tauri 2.0
-- **Crawling:** Rust `reqwest` & `regex`를 사용한 무설정(Zero-config) HTML 파싱
