@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenor Picker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- 드래그 핸들 (타이틀 바) -->
+  <div id="titlebar" data-tauri-drag-region>
+    <div id="titlebar-left">
+      <span id="logo">
+        <img src="penguin.png" alt="logo" class="title-icon" />
+        <span class="logo-g">G</span><span class="logo-i">I</span><span class="logo-p">F</span>
+      </span>
+      <span id="app-subtitle">Picker for CoolMessenger</span>
+    </div>
+  </div>
+
+  <!-- 검색 영역 -->
+  <div id="search-area">
+    <div id="search-wrap">
+      <span id="search-icon">🔍</span>
+      <input id="search-input" type="text" placeholder="GIF 검색... (비워두면 트렌딩)" autocomplete="off" spellcheck="false" />
+      <button id="btn-clear" title="지우기">✕</button>
+    </div>
+  </div>
+
+  <!-- 상태 표시 -->
+  <div id="status-bar">
+    <span id="status-text">트렌딩 GIF 로딩 중...</span>
+    <span id="count-badge"></span>
+  </div>
+
+  <!-- GIF 그리드 -->
+  <div id="gif-grid-wrap">
+    <div id="gif-grid"></div>
+    <div id="load-more-wrap">
+      <button id="btn-load-more">더 보기</button>
+    </div>
+    <div id="empty-state" style="display:none;">
+      <div class="empty-icon">🔍</div>
+      <div>검색 결과가 없습니다</div>
+    </div>
+  </div>
+
+  <!-- 복사 완료 토스트 -->
+  <div id="toast" class="toast-hidden">
+    <span id="toast-icon">✅</span>
+    <span id="toast-msg">클립보드에 복사됨!</span>
+  </div>
+
+  <!-- 창이 연결된 상태 표시 -->
+  <div id="attach-indicator">
+    <span class="dot connected"></span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

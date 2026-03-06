@@ -1,0 +1,14 @@
+{
+    "name": "coolmessenger-tenor-picker",
+    "version": "0.1.0",
+    "description": "Tenor Picker for CoolMessenger",
+    "scripts": {
+        "dev": "tauri dev",
+        "build": "tauri build",
+        "tauri": "tauri"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@tauri-apps/cli": "^2"
+    }
+}

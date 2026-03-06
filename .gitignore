@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+*.log*
+
+# Tauri
+src-tauri/target/
+src-tauri/gen/
